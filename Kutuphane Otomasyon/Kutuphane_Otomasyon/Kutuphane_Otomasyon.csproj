@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{41AB6336-D261-4CDD-8FBE-8FFD6AE77739}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kutuphane_Otomasyon</RootNamespace>
+    <AssemblyName>Kutuphane_Otomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Persistent.Base.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.1.Extensions, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.1.UI, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.1.Wizard, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alınabilir_Kitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alınabilir_Kitaplar.Designer.cs">
+      <DependentUpon>Alınabilir_Kitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ButunKullanıcılar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ButunKullanıcılar.Designer.cs">
+      <DependentUpon>ButunKullanıcılar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Butun_Kitaplarr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Butun_Kitaplarr.Designer.cs">
+      <DependentUpon>Butun_Kitaplarr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Butun_Mesajlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Butun_Mesajlar.Designer.cs">
+      <DependentUpon>Butun_Mesajlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bütün_Duyurular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bütün_Duyurular.Designer.cs">
+      <DependentUpon>Bütün_Duyurular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiğerBilgiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiğerBilgiler.Designer.cs">
+      <DependentUpon>DiğerBilgiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Duyuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Duyuru.Designer.cs">
+      <DependentUpon>Duyuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Duyuru_Olusturma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Duyuru_Olusturma.Designer.cs">
+      <DependentUpon>Duyuru_Olusturma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engelliler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Engelliler.Designer.cs">
+      <DependentUpon>Engelliler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKullanıcıGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKullanıcıGiris.Designer.cs">
+      <DependentUpon>FrmKullanıcıGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYoneticiGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYoneticiGiris.Designer.cs">
+      <DependentUpon>FrmYoneticiGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GelenMesajlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GelenMesajlar.Designer.cs">
+      <DependentUpon>GelenMesajlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Iade_Alma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iade_Alma.Designer.cs">
+      <DependentUpon>Iade_Alma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitap_Islemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitap_Islemleri.Designer.cs">
+      <DependentUpon>Kitap_Islemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullanıcıAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullanıcıAnaSayfa.Designer.cs">
+      <DependentUpon>KullanıcıAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullanıcıIade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullanıcıIade.Designer.cs">
+      <DependentUpon>KullanıcıIade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullanıcılarLink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullanıcılarLink.Designer.cs">
+      <DependentUpon>KullanıcılarLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullanıcıLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullanıcıLoad.Designer.cs">
+      <DependentUpon>KullanıcıLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanıcı_Islemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanıcı_Islemleri.Designer.cs">
+      <DependentUpon>Kullanıcı_Islemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanım_Klavuzu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanım_Klavuzu.Designer.cs">
+      <DependentUpon>Kullanım_Klavuzu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MesajGonderme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MesajGonderme.Designer.cs">
+      <DependentUpon>MesajGonderme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OduncAlma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OduncAlma.Designer.cs">
+      <DependentUpon>OduncAlma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OduncGecmisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OduncGecmisi.Designer.cs">
+      <DependentUpon>OduncGecmisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odunc_Verme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odunc_Verme.Designer.cs">
+      <DependentUpon>Odunc_Verme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SifreDegisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifreDegisim.Designer.cs">
+      <DependentUpon>SifreDegisim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sqlbaglantisi.cs" />
+    <Compile Include="YeniGelenler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniGelenler.Designer.cs">
+      <DependentUpon>YeniGelenler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiAnaSayfa.Designer.cs">
+      <DependentUpon>YoneticiAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiLoad.Designer.cs">
+      <DependentUpon>YoneticiLoad.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Alınabilir_Kitaplar.resx">
+      <DependentUpon>Alınabilir_Kitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ButunKullanıcılar.resx">
+      <DependentUpon>ButunKullanıcılar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Butun_Kitaplarr.resx">
+      <DependentUpon>Butun_Kitaplarr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Butun_Mesajlar.resx">
+      <DependentUpon>Butun_Mesajlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bütün_Duyurular.resx">
+      <DependentUpon>Bütün_Duyurular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiğerBilgiler.resx">
+      <DependentUpon>DiğerBilgiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Duyuru.resx">
+      <DependentUpon>Duyuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Duyuru_Olusturma.resx">
+      <DependentUpon>Duyuru_Olusturma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Engelliler.resx">
+      <DependentUpon>Engelliler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKullanıcıGiris.resx">
+      <DependentUpon>FrmKullanıcıGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYoneticiGiris.resx">
+      <DependentUpon>FrmYoneticiGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GelenMesajlar.resx">
+      <DependentUpon>GelenMesajlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iade_Alma.resx">
+      <DependentUpon>Iade_Alma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitap_Islemleri.resx">
+      <DependentUpon>Kitap_Islemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullanıcıAnaSayfa.resx">
+      <DependentUpon>KullanıcıAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullanıcıIade.resx">
+      <DependentUpon>KullanıcıIade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullanıcılarLink.resx">
+      <DependentUpon>KullanıcılarLink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullanıcıLoad.resx">
+      <DependentUpon>KullanıcıLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanıcı_Islemleri.resx">
+      <DependentUpon>Kullanıcı_Islemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanım_Klavuzu.resx">
+      <DependentUpon>Kullanım_Klavuzu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MesajGonderme.resx">
+      <DependentUpon>MesajGonderme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OduncAlma.resx">
+      <DependentUpon>OduncAlma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OduncGecmisi.resx">
+      <DependentUpon>OduncGecmisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odunc_Verme.resx">
+      <DependentUpon>Odunc_Verme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SifreDegisim.resx">
+      <DependentUpon>SifreDegisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniGelenler.resx">
+      <DependentUpon>YeniGelenler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiAnaSayfa.resx">
+      <DependentUpon>YoneticiAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiLoad.resx">
+      <DependentUpon>YoneticiLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
